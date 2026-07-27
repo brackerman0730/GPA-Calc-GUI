@@ -5,6 +5,7 @@ $OUT_DIR = "out"
 
 if (!(Test-Path $JAVAFX_LIB)) {
     Write-Error "JavaFX lib folder not found: $JAVAFX_LIB"
+    exit 1
 }
 
 if (Test-Path $OUT_DIR) {
@@ -21,5 +22,10 @@ javac `
   --add-modules javafx.controls `
   -d $OUT_DIR `
   $JAVA_FILES
+
+if ($LASTEXITCODE -ne 0) {
+    Write-Error "javac failed."
+    exit 1
+}
 
 Write-Host "Compilation complete."

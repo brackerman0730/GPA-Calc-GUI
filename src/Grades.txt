@@ -1,5 +1,12 @@
-CS457;PA's: 20%, Labs: 10%, Presentation: 15%, Participation: 5%, Midterm: 20%, Final: 30%;93.33333, 100, 93.14, 108.7 , 65, 88; 3
-SP104;Participation: 10%, 2 exams: 20%, VHL/HW: 10%, Quizzes: 10%, Comps: 17%, Final: 20%, Oral: 10%, Cultural event: 3%;90.32, 82.5, 93.4, 80, 93.75, 87.5, 100, 100; 3
-CS456;Web Project 1: 10%, Web Project 2: 10%, Web Project 3: 10%, Web Project 4: 10%,Web Project 5: 10%,Assignments/Quizzes: 10%, Midterm: 20%, Final: 20% ;95, 100, 100, 100, 100, 100, 82.5, 95; 3
-CS371;Labs: 11.7647058824%, Seven assignments: 19.7647058824%, Project: 18.8235294118%, Midterm: 23.5294117647%, Final: 23.5294117647%, Slush: 2.58823529412%;87.5, 85.29, 88, 83, null, 33; 4
-MA252;Exam 1: 15%, Exam 2: 15%, Exam 3: 15%, Final Exam: 15%, Quizzes: 10%, HW: 15%, Activities: 5%, mini projects: 10%;84.72, 100, 100, 100, 97.5, 111.0, 100, 100; 4
+PRIOR;15;3.6
+PRIOR;16;3.313
+PRIOR;17;3.354
+PRIOR;13;3.691
+PRIOR;17;3.59
+PRIOR;17;3.686
+General Physics;;;4
+Comic Books as Lit, TV & Cinema;;;3
+Operating Systems;;;3
+Genera Physics Lab;;;1
+Software Engineering;;;3
+CS Project Plan;;;1
