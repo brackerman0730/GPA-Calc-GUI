@@ -369,7 +369,7 @@ public class MainFX extends Application {
         }
         try {
             saveToFile(currentFile, transcript);
-            statusLabel.setText("Saved to " + currentFile.getName());
+            statusLabel.setText("Saved to " + currentFile.getName() + refreshGpaImage());
             showTranscript();
         } catch (Exception ex) {
             showAlert(AlertType.ERROR, "Save Error", ex.getMessage());
@@ -386,10 +386,28 @@ public class MainFX extends Application {
         try {
             saveToFile(f, transcript);
             currentFile = f;
-            statusLabel.setText("Saved to " + f.getName());
+            statusLabel.setText("Saved to " + f.getName() + refreshGpaImage());
             showTranscript();
         } catch (Exception ex) {
             showAlert(AlertType.ERROR, "Save Error", ex.getMessage());
+        }
+    }
+
+    /**
+     * Regenerates the square GPA image Deck uses as this app's tile icon.
+     *
+     * <p>Called after a successful save rather than from inside
+     * {@code saveToFile}: the transcript is already safely on disk at that
+     * point, so a failure here is worth reporting but must not be mistaken for
+     * the save itself failing. Returns a suffix for the status line, and never
+     * throws.
+     */
+    private String refreshGpaImage() {
+        try {
+            GpaIcon.write(transcript.calculateOverallGPA());
+            return "  •  GPA image updated";
+        } catch (Exception ex) {
+            return "  •  GPA image failed: " + ex.getMessage();
         }
     }
 
